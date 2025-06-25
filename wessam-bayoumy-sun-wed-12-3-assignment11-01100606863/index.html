@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Bookmarker<div class="bg"></div>
+    </h1>
+
+
+
+    <div class="container">
+        <div class="border">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+            <label for="Name"><i class="fa-solid fa-book"></i> Site Name</label>
+            <input type="text" id="Name" placeholder="Bookmark Name">
+
+            <label for="url"><i class="fa-solid fa-link"></i> Site URL</label>
+            <input type="text" id="url" placeholder="Website URL">
+
+            <button class="submit-btn">
+                Submit
+            </button>
+        </div>
+
+
+        <table class="table">
+
+            <thead class="">
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody class="tbody">
+                <!-- <tr>
+
+                    <td>
+                        Index
+                    </td>
+
+
+                    <td>
+                        SiteName
+                    </td>
+
+
+                    <td>
+                        <button class="table-btn eye-btn"><a class="text-decoration-none text-white" href=""><i class="fa-solid fa-eye"></i>Visit</a></button>
+                    </td>
+
+
+                    <td>
+                        <button class="table-btn del-btn"><i class="fa-solid fa-trash-can"></i>Delete</button>
+                    </td>
+
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <div
+        class="error bg-black bg-opacity-50 position-fixed top-0 bottom-0 start-0 end-0 d-none justify-content-center align-items-center ">
+        <div class="bg-white msg p-3 position-relative">
+            <i class="fa-solid fa-lg fa-circle me-2 text-danger"></i><i
+                class="fa-solid fa-lg fa-circle me-2 text-warning"></i><i
+                class="fa-solid fa-lg fa-circle me-2 text-success"></i>
+            <i class="fa-solid fa-2xl fa-xmark position-absolute"></i>
+            <h3 class="pt-4">Site Name or Url is not valid, Please follow the <br> rules below :</h3>
+            <ul class="list-unstyled">
+                <li class="py-2"> Site name must contain at least 3 characters</li>
+                <li class="py-2"> Site URL must be a valid one</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/882d8d36f4.js" crossorigin="anonymous"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
